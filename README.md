@@ -1,4 +1,4 @@
-# Kafka
+<h1 align="center">Kafka</h1>
 
 In this repository, I used kafka with spring boot and docker-compose to create some topics, 
 producers and consumers.
