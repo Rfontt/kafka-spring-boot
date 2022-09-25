@@ -1,6 +1,6 @@
 package com.microservice.kafka.producer;
 
-import com.fasterxml.jackson.databind.JsonSerializer;
+import org.springframework.kafka.support.serializer.JsonSerializer;
 import org.apache.kafka.clients.admin.NewTopic;
 import org.apache.kafka.clients.producer.ProducerConfig;
 import org.apache.kafka.common.serialization.StringSerializer;
@@ -43,5 +43,10 @@ public class UserProducer {
     @Bean
     public NewTopic topic() {
         return new NewTopic("user-list-1", 2, (short) 1);
+    }
+
+    @Bean
+    public NewTopic topic2() {
+        return new NewTopic("user-email-list", 2, (short) 1);
     }
 }

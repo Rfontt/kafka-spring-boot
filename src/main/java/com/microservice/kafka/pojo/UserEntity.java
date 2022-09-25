@@ -16,6 +16,12 @@ public class UserEntity {
         this.email = email;
     }
 
+    public UserEntity(
+            @JsonProperty String email
+    ) {
+        this.email = email;
+    }
+
     public String getName() {
         return name;
     }
