@@ -45,3 +45,7 @@ http://localhost:8080/user-kafka/email - POST
 ***Get all messages about users email***
 
 http://localhost:8080/user-kafka/email - GET
+
+##!Important!
+
+You can get all these routes in ***routes-insomnia*** directory
